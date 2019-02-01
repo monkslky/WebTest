@@ -9,7 +9,10 @@
             body {
                 text-align: center;
                 color: #FFF;
-                width: 900px;
+                background-color: yellow;
+                width: window.innerwidth;
+                height: 100%;
+                margin: 0;
             }
             div#wapper {
                 width: 100%;
@@ -17,30 +20,32 @@
                 min-height: 700px;
                 margin: 0 auto;
             }
-            header, footer, nav, aside, section {
-                border: 1px solid #999;
-                margin: 5px;
+            header, footer, aside, section {
+                border: 1px solid #FDD;
+                margin: 0px;
                 padding: 10px;
             }
             header {
                 height: 50px;
                 background-color: red;
             }
-            nav, section, aside {
+            section, aside {
                 float: left;
                 height: 200px;
             }
-            nav {
+            /* nav {
                 background-color: goldenrod;
                 width: 100px;
-            }
+            } */
             section {
                 background-color: green;
-                width: 735px;
+                /* width: 735px; */
+                width: 70%;
             }
             aside {
                 background-color: goldenrod;
-                width: 100px;
+                /* width: 100px; */
+                width : window.innerwidth;
             }
             footer {
                 height: 50px;
