@@ -53,11 +53,10 @@
                         item = item.trim();
                         console.log(item);
 
-                        var tag = '<li><a href="#!' + item + '">' + item + '</a></li>';
+                        var tag = '<li><a href="#!' + item + '" onclick="fetchPage(\'' + item + '\")">' + item + '</a></li>';
                         tags = tags + tag;
                         i = i + 1;
                     }
-
                     console.log(tags);
 
                     document.querySelector('#nav').innerHTML = tags;
