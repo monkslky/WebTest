@@ -39,7 +39,7 @@
                 fetchPage('Welcome.txt');
             }
 
-            fetch(list).then(function(response) {
+            fetch(list.txt).then(function(response) {
                 response.text().then(function(text) {
                     document.querySelector('#nav').innerHTML = text;
                 })
