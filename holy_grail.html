@@ -6,47 +6,83 @@
         <title></title>
 
         <style>
+
             .container {
-                border: 5px solid gray;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
             }
 
-            .body {
-                border: 5px solid yellow;
+            /* .container * {
+                border: 5px solid gray;
+            } */
+
+            header {
+                border-bottom: 1px solid gray;
+            }
+
+            footer {
+                border-top: 1px solid gray;
+                padding: 20px;
+                text-align: center;
             }
 
             .content {
-                border: 5px solid skyblue;
+                display: flex;
             }
 
-            #runway {
-                border: 5px solid red;
+            .content nav {
+                border-right: 1px solid gray;
             }
 
-            #canvas {
-                border: 5px solid orange;
+            .content aside {
+                border-left: 1px solid gray;
             }
+
+            nav, aside {
+                flex-basis: 150px;
+                flex-shrink: 0;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            aside {
+                padding: 10px;
+            }
+
         </style>
     </head>
 
     <body>
         <div class="container">
             <header>
-                <h1>Header</h1>
+                <h1>HEADER</h1>
             </header>
 
-            <div class="content">
-                <canvas id="runway" width="300" height="500"></canvas>
-                <canvas id="runway" width="300" height="500"></canvas>
-                <canvas id="canvas" width="300" height="300"></canvas>
-            </div>
+            <section class="content">
+
+                <nav>
+                    <ul>
+                        <li>html</li>
+                        <li>CSS</li>
+                        <li>javascript</li>
+                    </ul>
+                </nav>
+
+                <main>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem facere itaque nisi ipsum voluptate alias, ea vitae nemo, voluptas facilis sunt tenetur harum quos cumque unde aut obcaecati atque modi nobis. Maxime molestias, veritatis alias sapiente quo fugiat provident. Provident totam asperiores laboriosam dignissimos, cupiditate, voluptatum dolore nam repellat architecto minus consequuntur. Officiis magni reprehenderi!
+                </main>
+
+                <aside>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, possimus
+                </aside>
+            </section>
 
             <footer>
-                <h5>Footer</h5>
+                FOOTER
             </footer>
         </div>
-
     </body>
 
 </html>
