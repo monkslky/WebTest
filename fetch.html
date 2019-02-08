@@ -6,14 +6,18 @@
     </head>
     <body>
         <article>
-            <input type="button" value="fetch" onclick="
-                fetch('html').then(function(response){
-                    response.text().then(function(text){
-                        document.querySelector('article').innerHTML = text;
-                    })
-                })
-            ">
         </article>
+
+        <input type="button" value="fetch" onclick="
+            /*
+            fetch('html').then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            })
+            */
+            fetch('html');
+        ">
 
     </body>
 </html>
