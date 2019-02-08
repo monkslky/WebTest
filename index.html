@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>WEB2</title>
 
-        <link rel="stylesheet" href="css/color.css">
+        <!-- <link rel="stylesheet" href="CSS/color.css"> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="JS/color.js"></script>
     </head>
@@ -18,6 +18,7 @@
             <li><a onclick="fetchPage('html')">HTML</a></li>
             <li><a onclick="fetchPage('css.txt')">CSS</a></li>
             <li><a onclick="fetchPage('javascript.txt')">JavaScript</a></li>
+            
         </ol>
 
         <!-- <h2>WEB</h2>
@@ -30,10 +31,11 @@
             function fetchPage(name) {
                 fetch(name).then(function(response) {
                     response.text().then(function(text) {
-                        documents.querySelector('article').innerHTML = text;
+                        document.querySelector('article').innerHTML = text;
                     })
                 });
             }
+
         </script>
 
     </body>
