@@ -43,7 +43,7 @@
             fetch('list').then(function(response) {
                 response.text().then(function(text) {
 
-                    console.log(text);
+                    // console.log(text);
                     var items = text.split(',');
                     var i = 0;
                     var tags = '';
@@ -58,9 +58,10 @@
                         i = i + 1;
                     }
 
-                    console.log(items);
+                    console.log(tags);
 
                     document.querySelector('#nav').innerHTML = tags;
+
                 })
             });
 
